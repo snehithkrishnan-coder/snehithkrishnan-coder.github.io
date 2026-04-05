@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snehith Krishnan R — Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="projects-wrapper">
+
+    <header class="site-header">
+      <a href="index.html" class="logo">SKR</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="projects-content">
+
+      <header class="page-hero">
+        <p class="eyebrow">
+          <i class="fa-solid fa-folder-tree"></i>&nbsp; My Work
+        </p>
+        <h1>Projects &amp; <span>Builds</span></h1>
+        <p>
+          Things I've built or I'm currently working on. Most of it is security-related
+          because that's where my interest is right now. More coming as I grow.
+        </p>
+      </header>
+
+      <div class="projects-list">
+
+        <article class="project-card glass">
+
+          <div class="project-thumb" style="background: linear-gradient(135deg, rgba(90,126,245,0.15) 0%, rgba(155,107,250,0.15) 100%);">
+            <div class="project-thumb-emoji">🔍</div>
+            <p class="project-thumb-label">VulnTrace</p>
+          </div>
+
+          <div class="project-info">
+            <p class="project-num">Project 01 &mdash; 2025 · In Progress</p>
+
+            <h2 class="project-title">VulnTrace</h2>
+
+            <p class="project-desc">
+              A tool that scans a given application and helps identify potential
+              security vulnerabilities. The idea came from wanting a simpler way to
+              do initial triage on a target — instead of running five different tools
+              manually, VulnTrace brings it together in one place. Still in early
+              development, but the core scanner is functional.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Security</span>
+              <span class="tech-pill">CLI Tool</span>
+              <span class="tech-pill">Vulnerability Analysis</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/snehithkrishnan-coder" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+                GitHub (Coming Soon)
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+      <div class="ctf-section glass">
+        <p class="section-eyebrow">
+          <i class="fa-solid fa-flag"></i>&nbsp; CTF Activity
+        </p>
+        <h2>Capture The Flag</h2>
+        <p>
+          Alongside personal projects, I actively participate in CTF competitions
+          with team bi0s. CTFs are basically the best way I know to get good at
+          offensive security — every challenge is a real puzzle with a real solution.
+          My main categories are binary exploitation (pwn) and reverse engineering,
+          which overlap heavily with what I'm learning day to day.
+        </p>
+        <p>
+          I'm still building my skillset but the grind is ongoing. You can follow
+          team bi0s on CTFtime to see competition results.
+        </p>
+        <div class="ctf-tag-row">
+          <span class="tech-pill">Binary Exploitation (Pwn)</span>
+          <span class="tech-pill">Reverse Engineering</span>
+          <span class="tech-pill">x86-64 Assembly</span>
+          <span class="tech-pill">pwntools</span>
+          <span class="tech-pill">GDB / pwndbg</span>
+          <span class="tech-pill">team bi0s</span>
+        </div>
+      </div>
+
+      <div style="text-align: center; padding: 56px 0 16px;">
+        <p style="font-size: 0.82rem; color: var(--text-muted); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px;">
+          More projects on the way
+        </p>
+        <a href="https://github.com/snehithkrishnan-coder" target="_blank" rel="noopener" class="btn-secondary">
+          <i class="fa-brands fa-github"></i>
+          View GitHub Profile
+        </a>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      Built with HTML, CSS and <em>a lot of curiosity.</em>
+    </footer>
+
+  </div>
+
+</body>
+</html>
