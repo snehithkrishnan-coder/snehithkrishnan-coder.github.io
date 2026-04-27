@@ -3,172 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Snehith Krishnan R — Portfolio</title>
+  <title>Snehith Krishnan R</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <div class="page-wrapper">
+  <nav>
+    <a href="index.html" class="logo">SKR</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <header class="site-header">
-      <a href="index.html" class="logo">SKR</a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <div class="home-container">
 
-    <main class="home-layout">
+    <div class="hero-section">
+      <h1>Hi, I'm <span>Snehith Krishnan R</span></h1>
+      <p>
+        A first-year CSE student at Amrita Vishwa Vidyapeetham, Kollam.
+        I'm into binary exploitation, reverse engineering, and finding
+        vulnerabilities in software. I'm also a member of team bi0s,
+        one of India's top CTF teams.
+      </p>
+      <div class="btn-row">
+        <a href="projects.html" class="btn btn-blue">View My Projects</a>
+        <a href="contact.html" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
 
-      <section class="home-left glass">
+    <div class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skill-tags">
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">x86-64 Assembly</span>
+        <span class="skill-tag">x86-32 Assembly</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">Binary Exploitation</span>
+        <span class="skill-tag">Reverse Engineering</span>
+        <span class="skill-tag">Public Speaking</span>
+      </div>
+    </div>
 
-        <p class="hero-eyebrow">Open to Opportunities</p>
-
-        <h1>
-          Security<br />
-          researcher &amp;<br />
-          <span class="accent">CTF player.</span>
-        </h1>
-
-        <div class="bio">
-          <p>
-            Hey, I'm Snehith Krishnan R — a first-year CSE student at Amrita Vishwa
-            Vidyapeetham, Kollam. I'm into binary exploitation, reverse engineering,
-            and finding vulnerabilities in things that aren't supposed to break.
-          </p>
-          <p>
-            I'm a member of team bi0s, one of India's top CTF teams, and I spend a
-            good chunk of my time playing CTFs, reading assembly, and understanding
-            how software fails. When I'm not doing that I'm either on the football
-            field or grinding some online game.
-          </p>
+    <div class="info-section">
+      <h2>Quick Info</h2>
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="value">bi0s</div>
+          <div class="label">CTF Team</div>
         </div>
-
-        <div class="skill-tags">
-          <span class="skill-tag">C / C++</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Assembly (x86-64)</span>
-          <span class="skill-tag">Assembly (x86-32)</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">HTML / CSS</span>
-          <span class="skill-tag">Binary Exploitation</span>
-          <span class="skill-tag">Reverse Engineering</span>
-          <span class="skill-tag">Public Speaking</span>
+        <div class="info-box">
+          <div class="value">1st Year</div>
+          <div class="label">B.Tech CSE</div>
         </div>
-
-        <div class="cta-row">
-          <a href="projects.html" class="btn-primary">
-            <i class="fa-solid fa-folder-open"></i>
-            View My Work
-          </a>
-          <a href="contact.html" class="btn-secondary">
-            <i class="fa-regular fa-paper-plane"></i>
-            Get in Touch
-          </a>
+        <div class="info-box">
+          <div class="value">20</div>
+          <div class="label">Age</div>
         </div>
-
-        <div class="divider"></div>
-        <h2>What I Do</h2>
-
-        <div class="skills-grid">
-
-          <div class="skill-card">
-            <span class="skill-card-icon">💥</span>
-            <div class="skill-card-name">Binary Exploitation</div>
-            <div class="skill-card-level">Learning / Practicing</div>
-            <div class="skill-bar-outer">
-              <div class="skill-bar-inner" style="width: 55%;"></div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <span class="skill-card-icon">🔍</span>
-            <div class="skill-card-name">Reverse Engineering</div>
-            <div class="skill-card-level">Learning / Practicing</div>
-            <div class="skill-bar-outer">
-              <div class="skill-bar-inner" style="width: 50%;"></div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <span class="skill-card-icon">🐍</span>
-            <div class="skill-card-name">Python / Scripting</div>
-            <div class="skill-card-level">Intermediate</div>
-            <div class="skill-bar-outer">
-              <div class="skill-bar-inner" style="width: 68%;"></div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <span class="skill-card-icon">⚙️</span>
-            <div class="skill-card-name">C / C++</div>
-            <div class="skill-card-level">Intermediate</div>
-            <div class="skill-bar-outer">
-              <div class="skill-bar-inner" style="width: 65%;"></div>
-            </div>
-          </div>
-
+        <div class="info-box">
+          <div class="value">Kollam</div>
+          <div class="label">Kerala, India</div>
         </div>
-
-      </section>
-
-      <aside class="home-right glass">
-
-        <h3>Quick Info</h3>
-        <p class="subtitle">A snapshot of who I am</p>
-
-        <div class="stat-grid">
-          <div class="stat-box">
-            <span class="num" style="font-family: var(--font-body); font-size: 1.3rem; letter-spacing: 0.04em;">bi0s</span>
-            <span class="lbl">CTF Team</span>
-          </div>
-          <div class="stat-box">
-            <span class="num">1st yr</span>
-            <span class="lbl">B.Tech CSE</span>
-          </div>
-          <div class="stat-box">
-            <span class="num">20</span>
-            <span class="lbl">Age</span>
-          </div>
-          <div class="stat-box">
-            <span class="num">Kollam</span>
-            <span class="lbl">Kerala, IN</span>
-          </div>
-        </div>
-
-        <div class="quick-links">
-          <a href="https://github.com/snehithkrishnan-coder" target="_blank" rel="noopener" class="quick-link-item">
-            <i class="fa-brands fa-github"></i>
-            github.com/snehithkrishnan-coder
-          </a>
-          <a href="mailto:snehithkrishnan@gmail.com" class="quick-link-item">
-            <i class="fa-regular fa-envelope"></i>
-            snehithkrishnan@gmail.com
-          </a>
-          <a href="about.html" class="quick-link-item">
-            <i class="fa-solid fa-user"></i>
-            Learn more about me
-          </a>
-          <a href="projects.html" class="quick-link-item">
-            <i class="fa-solid fa-code"></i>
-            See my projects
-          </a>
-        </div>
-
-      </aside>
-
-    </main>
-
-    <footer class="site-footer">
-      Built with HTML, CSS and <em>a lot of curiosity.</em>
-    </footer>
+      </div>
+    </div>
 
   </div>
+
+  <footer>
+    Built with HTML and CSS &mdash; Snehith Krishnan R
+  </footer>
 
 </body>
 </html>
