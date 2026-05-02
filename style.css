@@ -1,294 +1,122 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
-  color: #222222;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    color: #333333;
+}
+
+h1 {
+    color: #4a6cf7;
+}
+
+h2 {
+    color: #333333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 a {
-  text-decoration: none;
-  color: #4a6cf7;
+    color: #4a6cf7;
 }
 
 a:hover {
-  text-decoration: underline;
+    color: #ff6600;
 }
 
+/* navigation */
 
-/* navigation bar */
-
-nav {
-  background-color: #ffffff;
-  border-bottom: 2px solid #dddddd;
-  padding: 16px 32px;
-  overflow: hidden;
+.navbar {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #4a6cf7;
-  float: left;
-  text-decoration: none;
+.navbar a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
 }
 
-.nav-links {
-  list-style: none;
-  float: right;
-  margin: 0;
-  padding: 0;
+.navbar a:hover {
+    color: #4a6cf7;
 }
 
-.nav-links li {
-  display: inline;
-  margin-left: 8px;
+.navbar a.active {
+    color: #4a6cf7;
+    text-decoration: underline;
 }
 
-.nav-links a {
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  color: #555555;
-  text-decoration: none;
+/* box / card */
+
+.box {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-
-.nav-links a:hover {
-  background-color: #eef0ff;
-  color: #4a6cf7;
-  text-decoration: none;
-}
-
-.nav-links a.active {
-  background-color: #4a6cf7;
-  color: #ffffff;
-}
-
-
-/* page content wrapper */
-
-.container {
-  max-width: 820px;
-  margin: 40px auto;
-  padding: 0 24px;
-}
-
-
-/* card boxes */
-
-.card {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 10px;
-  padding: 32px;
-  margin-bottom: 24px;
-}
-
-.card h1 {
-  font-size: 1.8rem;
-  color: #1a1a2e;
-  margin-bottom: 12px;
-}
-
-.card h2 {
-  font-size: 1.2rem;
-  color: #1a1a2e;
-  margin-bottom: 16px;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #555555;
-  line-height: 1.8;
-  margin-bottom: 12px;
-}
-
-.blue-line {
-  width: 40px;
-  height: 3px;
-  background-color: #4a6cf7;
-  margin-bottom: 20px;
-}
-
-.accent {
-  color: #4a6cf7;
-}
-
-
-/* buttons */
-
-.btn {
-  display: inline-block;
-  padding: 10px 24px;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-decoration: none;
-  margin-right: 10px;
-  margin-top: 8px;
-}
-
-.btn-blue {
-  background-color: #4a6cf7;
-  color: #ffffff;
-  border: 2px solid #4a6cf7;
-}
-
-.btn-blue:hover {
-  background-color: #3a5ce5;
-  text-decoration: none;
-}
-
-.btn-outline {
-  background-color: #ffffff;
-  color: #4a6cf7;
-  border: 2px solid #4a6cf7;
-}
-
-.btn-outline:hover {
-  background-color: #eef0ff;
-  text-decoration: none;
-}
-
 
 /* skill tags */
 
-.skill-tag {
-  display: inline-block;
-  padding: 6px 16px;
-  background-color: #eef0ff;
-  color: #4a6cf7;
-  border: 1px solid #c5cefb;
-  border-radius: 20px;
-  font-size: 0.82rem;
-  margin: 4px;
+.tag {
+    display: inline-block;
+    background-color: #dde4ff;
+    color: #4a6cf7;
+    padding: 5px 12px;
+    margin: 4px;
+    border: 1px solid #4a6cf7;
+    border-radius: 15px;
+    font-size: 14px;
 }
 
+/* buttons */
 
-/* education */
-
-.edu-item {
-  border-left: 3px solid #4a6cf7;
-  padding-left: 16px;
-  margin-bottom: 24px;
+.button {
+    display: inline-block;
+    background-color: #4a6cf7;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.edu-item .year {
-  font-size: 0.78rem;
-  font-weight: bold;
-  color: #4a6cf7;
-  text-transform: uppercase;
-  margin-bottom: 4px;
+.button:hover {
+    background-color: #3355dd;
+    color: #ffffff;
 }
-
-.edu-item .degree {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #1a1a2e;
-  margin-bottom: 2px;
-}
-
-.edu-item .school {
-  font-size: 0.85rem;
-  color: #888888;
-  margin-bottom: 6px;
-}
-
-.edu-item .desc {
-  font-size: 0.88rem;
-  color: #555555;
-  line-height: 1.6;
-}
-
-
-/* projects */
-
-.project-tag {
-  font-size: 0.75rem;
-  font-weight: bold;
-  color: #4a6cf7;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-
-/* contact */
-
-.contact-item {
-  padding: 12px 0;
-  border-bottom: 1px solid #eeeeee;
-  font-size: 0.9rem;
-  color: #555555;
-}
-
-.contact-item:last-child {
-  border-bottom: none;
-}
-
 
 /* form */
 
-.form-group {
-  margin-bottom: 16px;
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #cccccc;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
 }
 
-.form-label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: #444444;
-  margin-bottom: 6px;
+label {
+    font-weight: bold;
+    font-size: 14px;
 }
-
-.form-input,
-.form-textarea {
-  width: 100%;
-  padding: 10px 14px;
-  border: 1.5px solid #cccccc;
-  border-radius: 6px;
-  font-family: Arial, sans-serif;
-  font-size: 0.9rem;
-  color: #222222;
-  background-color: #fafafa;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  border-color: #4a6cf7;
-  outline: none;
-}
-
-.form-textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.form-submit {
-  width: 100%;
-  padding: 12px;
-  background-color: #4a6cf7;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 8px;
-}
-
-.form-submit:hover {
-  background-color: #3a5ce5;
-}
-
 
 /* footer */
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border-top: 2px solid #dddddd;
-  font-size: 0.85rem;
-  color: #888888;
-  margin-top: 40px;
+.footer {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    text-align: center;
+    color: #888888;
+    font-size: 14px;
+    margin-top: 20px;
 }
