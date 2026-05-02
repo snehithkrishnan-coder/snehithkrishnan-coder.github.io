@@ -1,77 +1,100 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 20px;
+    background-color: #f0f2f8;
+    margin: 0;
+    padding: 0;
     color: #333333;
 }
 
 h1 {
-    color: #4a6cf7;
+    color: #1a1a2e;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: #333333;
+    color: #1a1a2e;
+    font-size: 20px;
+    margin-bottom: 14px;
+    border-bottom: 3px solid #4a6cf7;
+    padding-bottom: 8px;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
 }
 
 a {
     color: #4a6cf7;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #ff6600;
+    text-decoration: underline;
+    color: #2244cc;
 }
 
 /* navigation */
 
 .navbar {
-    background-color: #ffffff;
-    padding: 15px;
-    border: 1px solid #cccccc;
-    margin-bottom: 20px;
+    background-color: #1a1a2e;
+    padding: 16px 32px;
 }
 
 .navbar a {
-    margin-right: 15px;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    color: #333333;
+    margin-right: 24px;
+    padding: 8px 14px;
+    border-radius: 5px;
 }
 
 .navbar a:hover {
-    color: #4a6cf7;
+    background-color: #4a6cf7;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .navbar a.active {
-    color: #4a6cf7;
-    text-decoration: underline;
+    background-color: #4a6cf7;
+    color: #ffffff;
 }
 
-/* box / card */
+/* page wrapper */
+
+.container {
+    max-width: 860px;
+    margin: 36px auto;
+    padding: 0 20px;
+}
+
+/* white box cards */
 
 .box {
     background-color: #ffffff;
-    border: 1px solid #cccccc;
-    padding: 20px;
-    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    box-shadow: 2px 2px 8px #dddddd;
 }
 
 /* skill tags */
 
 .tag {
     display: inline-block;
-    background-color: #dde4ff;
+    background-color: #eef0ff;
     color: #4a6cf7;
-    padding: 5px 12px;
+    padding: 5px 14px;
     margin: 4px;
     border: 1px solid #4a6cf7;
-    border-radius: 15px;
-    font-size: 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 /* buttons */
@@ -80,43 +103,82 @@ a:hover {
     display: inline-block;
     background-color: #4a6cf7;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 11px 24px;
     text-decoration: none;
     border: none;
-    font-size: 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
     margin-right: 10px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #3355dd;
+    background-color: #2244cc;
     color: #ffffff;
+    text-decoration: none;
+}
+
+/* education */
+
+.edu-item {
+    border-left: 4px solid #4a6cf7;
+    padding-left: 16px;
+    margin-bottom: 20px;
+}
+
+.edu-item p {
+    margin-bottom: 4px;
 }
 
 /* form */
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 12px;
-    border: 1px solid #cccccc;
-    font-size: 15px;
-    font-family: Arial, sans-serif;
-}
-
 label {
     font-weight: bold;
+    font-size: 13px;
+    color: #555555;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 4px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
     font-size: 14px;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #4a6cf7;
+    outline: none;
+}
+
+/* contact rows */
+
+.contact-row {
+    padding: 12px 0;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 15px;
+}
+
+.contact-row:last-child {
+    border-bottom: none;
 }
 
 /* footer */
 
 .footer {
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    padding: 15px;
+    background-color: #1a1a2e;
+    padding: 18px;
     text-align: center;
-    color: #888888;
-    font-size: 14px;
+    color: #aaaaaa;
+    font-size: 13px;
     margin-top: 20px;
 }
